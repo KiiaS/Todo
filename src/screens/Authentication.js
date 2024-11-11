@@ -44,7 +44,7 @@ export default function Authentication({authenticationMode}) {
                     <button>{authenticationMode === AuthenticationMode.Login ? 'Login' : 'Submit'}</button>
                 </div>
                 <div>
-                    <Link to={authenticationMode === AuthenticationMode.Login ? '/signup' : 'signin'}>
+                    <Link to={authenticationMode === AuthenticationMode.Login ? '/signup' : '/signin'}>
                         {authenticationMode === AuthenticationMode.Login ? 'No account? Sign up' : 'Already signed up? Sign in'}
                     </Link>
                 </div>

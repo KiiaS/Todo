@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { pool } from './db.js';
 import jwt from 'jsonwebtoken';
-import { hash } from 'bcrypt';
+import { hash, compare } from 'bcrypt';
 
 const { sign } =jwt;
 
